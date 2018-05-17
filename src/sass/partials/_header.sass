@@ -1,0 +1,45 @@
+.header
+    padding: 29px
+
+    &__inner
+        display: flex
+        align-items: center
+    &__logo
+        padding-left: 80px
+    &__nav
+        padding-left: 190px
+
+
+.nav
+    ul
+        font-size: 0
+    li
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            bottom: -5px
+            left: 0
+            width: 0
+            height: 2px
+            background-color: #5da8ef
+            transition: all .3s ease
+        &:not(:last-child)
+            margin-right: 41px
+        &:hover
+            &:after
+                width: 100%
+    &__link
+        font-size: 9px
+        color: #0b0c11
+        font-family: spartan, sans-serif
+        text-transform: uppercase
+        letter-spacing: .62em
+        text-decoration: none
+
+
+.logo
+    display: block
+    font-size: 50px
